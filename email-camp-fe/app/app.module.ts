@@ -1,3 +1,5 @@
+import { DocumentsComponent } from './documents/documents.component';
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -6,11 +8,13 @@ import { HomepageComponent } from './homepage/homepage.component';
 
 @NgModule({
 	imports: [
-		BrowserModule
+		BrowserModule,
+		AppRoutingModule
 	],
 	declarations: [
 		HomepageComponent, 
-		AppComponent
+		AppComponent,
+		DocumentsComponent
 	],
 	bootstrap: [
 		AppComponent
