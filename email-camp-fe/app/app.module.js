@@ -15,6 +15,7 @@ var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
 var homepage_component_1 = require('./homepage/homepage.component');
 var proposal_list_component_1 = require('./proposal/proposal-list.component');
+var proposal_new_component_1 = require('./proposal/proposal-new.component');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -28,7 +29,8 @@ var AppModule = (function () {
                 homepage_component_1.HomepageComponent,
                 app_component_1.AppComponent,
                 documents_component_1.DocumentsComponent,
-                proposal_list_component_1.ProposalListComponent
+                proposal_list_component_1.ProposalListComponent,
+                proposal_new_component_1.ProposalNewComponent
             ],
             bootstrap: [
                 app_component_1.AppComponent

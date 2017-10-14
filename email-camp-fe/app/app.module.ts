@@ -6,6 +6,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { HomepageComponent } from './homepage/homepage.component';
 import { ProposalListComponent } from './proposal/proposal-list.component';
+import { ProposalNewComponent } from './proposal/proposal-new.component';
 
 @NgModule({
 	imports: [
@@ -16,7 +17,8 @@ import { ProposalListComponent } from './proposal/proposal-list.component';
 		HomepageComponent, 
 		AppComponent,
 		DocumentsComponent,
-		ProposalListComponent
+		ProposalListComponent,
+		ProposalNewComponent
 	],
 	bootstrap: [
 		AppComponent
