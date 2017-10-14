@@ -9,8 +9,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var proposal_1 = require('./proposal');
 var ProposalListComponent = (function () {
     function ProposalListComponent() {
+        this.proposalOne = new proposal_1.Proposal(15, 'GIB Company', 'http://agb.rocks', 'Ruby and Angular 2', 150, 120, 15, 'email@gmail.com');
+        this.proposalTwo = new proposal_1.Proposal(16, 'sd Company', 'http://agb.rocks', 'Ruby and Angular 2', 150, 120, 15, 'email@gmail.com');
+        this.proposalThree = new proposal_1.Proposal(17, 'some Company', 'http://agb.rocks', 'Ruby and Angular 2', 150, 120, 15, 'email@gmail.com');
+        this.proposalFour = new proposal_1.Proposal(18, 'cheese Company', 'http://agb.rocks', 'Ruby and Angular 2', 150, 120, 15, 'email@gmail.com');
+        this.proposals = [
+            this.proposalOne,
+            this.proposalTwo,
+            this.proposalThree,
+            this.proposalFour
+        ];
     }
     ProposalListComponent = __decorate([
         core_1.Component({
