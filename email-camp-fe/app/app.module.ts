@@ -5,6 +5,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { HomepageComponent } from './homepage/homepage.component';
+import { ProposalListComponent } from './proposal/proposal-list.component';
 
 @NgModule({
 	imports: [
@@ -14,7 +15,8 @@ import { HomepageComponent } from './homepage/homepage.component';
 	declarations: [
 		HomepageComponent, 
 		AppComponent,
-		DocumentsComponent
+		DocumentsComponent,
+		ProposalListComponent
 	],
 	bootstrap: [
 		AppComponent
