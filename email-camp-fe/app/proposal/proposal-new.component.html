@@ -76,15 +76,15 @@
         </div>
         <div class="form-group">
                 <label for="client_email">Client email</label>
-                <input type="text"
+                <input type="email"
                     id="client_email"
                     placeholder="green6erry@gmail.com"
-                    required
                     name="client_email"
                     #client_email='ngModel'
                     [(ngModel)]="proposal.client_email"
     
                 >
+                <label for="client_email"><em>(optional)</em></label>
         </div>
 
     </form>
@@ -101,7 +101,7 @@
             <li>Estimated hours: {{proposal.estimated_hours}}</li>
             <li>Weeks to Complete: {{proposal.weeks_to_complete}}</li>
         </ul>
-        <p>The estimated total will be {{proposal.estimated_hours}}</p>
+        <p>The estimated total will be ${{proposal.hourly_rate * proposal.estimated_hours}}.</p>
    <p>Please let me know if you have any questions. You can see more of our material on <a href="{{proposal.portfolio_url}}">our website</a>. We look forward to working with you! </p>
     
 </div>
