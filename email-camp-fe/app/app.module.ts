@@ -3,6 +3,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { HomepageComponent } from './homepage/homepage.component';
 import { ProposalListComponent } from './proposal/proposal-list.component';
@@ -11,7 +12,8 @@ import { ProposalNewComponent } from './proposal/proposal-new.component';
 @NgModule({
 	imports: [
 		BrowserModule,
-		AppRoutingModule
+		AppRoutingModule,
+		FormsModule
 	],
 	declarations: [
 		HomepageComponent, 
